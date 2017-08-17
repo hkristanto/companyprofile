@@ -38,10 +38,10 @@
                     <a class="nav-link" href="productservice.html">Product & Services</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownvenue" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Partner
                         </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownvenue">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                         <a class="dropdown-item" href="venuepartner.html">Venue Partner</a>
                         <a class="dropdown-item" href="transportationpartner.html">Transportation Partner</a>
                     </div>
@@ -65,45 +65,42 @@
     <div class="container-fluid">
 
         <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">Our <small>product & services</small></h1>
+        <h1 class="mt-4 mb-3">Log <small>in</small></h1>
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item active">Product & Services</li>
+            <li class="breadcrumb-item active">Login</li>
         </ol>
 
-        <!-- The Product -->
-        <section id="product">
-          <div class="container">
-            <h2 class="text-center">Product and Services</h2>
-            <hr class="star-primary">
-
-            <div class="row">
-              <div class="product-item">
-                <div class="product-link" href="#profileModal1" data-toggle="modal">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <i class="fa fa-search-plus fa-3x"></i>
+        <!-- Login Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Username:</label>
+                            <input type="text" class="form-control" name="username" required data-validation-required-message="Please enter your username.">
+                            <p class="help-block"></p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6 imagediv" style="float:left;">
-                    <img class="img-fluid mx-auto d-block" src="resource/profile.png" alt="">
-                  </div>
-                  <div class="col-sm-6" style="float:right;">
-                    <p style="text-align:justify;">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them.</p>
-                  </div>
-                </div>
-              </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Password:</label>
+                            <input type="password" class="form-control" name="password" required data-validation-required-message="Please enter your password.">
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </form>
             </div>
 
-          </div>
-        </section>
-
+        </div>
         <!-- /.row -->
-
-        <hr>
 
     </div>
     <!-- /.container -->
